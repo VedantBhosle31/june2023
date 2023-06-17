@@ -16,4 +16,4 @@ once:
 	pdflatex $(MAIN)
 
 clean: 
-	-rm -f $(MAIN).{pdf,log,blg,bbl,aux,out,toc,bcf,run.xml,ind,ilg,fls,fdb_latexmk}	
+	-rm -f $(MAIN).{pdf,log,blg,bbl,aux,out}	
