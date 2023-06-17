@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{url}
+\usepackage[left=2cm,right=2cm,top=3.5cm,bottom=5cm]{geometry}
+
+%------------------------
+\title{ID2090 : Assignment 4}
+\author{Deepanjhan Das : CH22B020}
+\date{June 18, 2023}
+%------------------------
+
+\begin{document}
+%------------------------
+\maketitle
+%------------------------
+\thispagestyle{empty}
+\vspace{1cm}
+\section{CH22B020}
+\subsection{Student-Info}
+\textbf{FULL NAME} : Deepanjhan Das \\
+\textbf{GITHUB ID} : deep183Das \\
+\textbf{GITHUB PAGE} : \url{https://github.com/deep183Das}  \\
+\textbf{EQUATION CHOOSEN} : Black-Scholes Equation (Finance) \\
+
+\subsection{Introduction}
+
+The \textbf{Black-Scholes model} is a mathematical model used to calculate the theoretical price of financial options. The model provides insights into option pricing and has become a pivotal point of modern finance.
+
+\subsection{Discussion}
+
+In the year of 1973, Fischer Black and Myron Scholes formulated a mathematical formula, known as \textbf{Black-Scholes equation(BSe)}, to calculate the price of a European-style call or put option. In an article by Saima Rashid~\footnotemark[1], he refers about this equation by saying that ``The pioneering Black-Scholes equation (BSe) is at the core
+of contemporary financial economics, and it is indeed tough
+to communicate about mainstream capitalism without mentioning the revolutionary BSe."
+
+
+The \textbf{Black-Scholes equation}(BSe) is a partial differential equation which is as follows~\footnotemark[2] :
+%-------------
+\begin{equation}
+    \textbf{D}_\rho^\delta\upsilon + \frac{{1}}{{2}}\omega^2S^2\frac{{\partial^2\upsilon}}{{\partial S^2}} + \zeta S\frac{\partial\upsilon}{{\partial S}} - \zeta\upsilon = 0
+    \label{eq1}
+\end{equation}
+
+The fractional interpretation of BSe is characterized in financial services by eq~\ref{eq1}, which is subject to the playoff mapping~\footnotemark[2] :
+
+\begin{equation}
+    \upsilon(S,\xi) = \text{ max} (S - E,0)
+    \label{eq2}
+\end{equation}
+%-----------
+where:
+
+\begin{itemize}
+\item $\upsilon$ denotes the alternative means worth at underlying asset price(S) of the moment($\rho$).
+\item $\xi$ indicates the termination term.
+\item E symbolizes to share value.
+\item $\textbf{D}_\rho^\delta\upsilon$ denotes the partial derivative of $\upsilon$ with respect to moment $\rho$, capturing the time decay or change in the option price over time.
+\item $\frac{{\partial^2\upsilon}}{\partial S^2}$ represents the second partial derivative of $\upsilon$ with respect to the underlying asset price(S), measuring the curvature of option price.
+\item The parameter $\zeta$ represents the uncertainty of borrowing until it matures.
+\item The continual $\omega$ indicates the unpredictability of a trading asset.
+\end{itemize}
+
+
+It is to be mentioned that $\upsilon(0,\rho)$ = 0 and $\upsilon(S,\xi)$ $\approx$ S as S $\rightarrow$ $\infty$. 
+
+\subsection{Assumptions}
+
+The Black-Scholes equations takes certain assumptions which includes the efficient market hypothesis, no transaction costs or taxes, constant volatility and the ability of borrowing and lending at the risk-free interest rate. 
+
+\subsection{Conclusion}
+
+Though this model has its limitations, it has had a great impact on the field of financial mathematics and option pricing. 
+
+%----------------------
+\footnotetext[1]{Saima Rashid, "An Efficient Method for Solving Fractional Black-Scholes Model with Index and Exponential Decay Kernels" 2022, Journal of Function Spaces}
+
+\footnotetext[2]{Necati {\"O}zdemir and Mehmet Yavuz, "Numerical Solution of Fractional Black-Scholes Equation by Using the Multivariate Pad{\'e} Approximation", Volume-132, Pages-1050-1053, Journal of Acta Physica Polonica A}
+
+\end{document}
