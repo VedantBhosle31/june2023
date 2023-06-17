@@ -1,0 +1,10 @@
+TEX_FILE = AE22B070.tex
+
+all: pdf
+
+pdf:
+    pdflatex $(TEX_FILE)
+    pdflatex $(TEX_FILE)
+
+clean:
+    rm -f *.log *.aux *.pdf
