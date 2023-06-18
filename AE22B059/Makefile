@@ -1,6 +1,6 @@
 target:ae22b059.tex
 	pdflatex ae22b059.tex
-	bibtex ae22b059.tex
+	bibtex ae22b059
 	pdflatex ae22b059.tex
 	pdflatex ae22b059.tex
 	
