@@ -1,4 +1,4 @@
-target:braggs.tex
-	pdflatex braggs.tex
+target:mm22b025.tex
+	pdflatex mm22b025.tex
 	
-	rm -rf braggs.aux braggs.bbl braggs.log braggs.blg
+	rm -rf mm22b025.aux mm22b025.bbl mm22b025.log mm22b025.blg
