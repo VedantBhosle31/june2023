@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\title{assn4}
+\author{Vedant Sandeep Bhosle}
+\date{June 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{AE22B062}
+\section{Introduction}
+Fluid mechanics is the field of physics that deals with the physical mechanics of fluids (plasmas, gases, and liquids) and forces acting on them. It has a wide variety of applications in fields like engineering, oceanography, astrophysics, geophysics, biology, and meteorology. Fluid mechanics can be categorised into fluid statics and fluid mechanics. Fluid statics is the study of fluids at the state of rest. Fluid dynamics is the study of the impacts of forces on fluids in motion. It is a section of continuum mechanics, a field that deals with the matter without concerning the information that comes out of the inherent properties of atoms. It only models matter from a macroscopic perspective rather than from an atomic or molecular viewpoint.
+
+Fluid dynamics is a prolific research field which is generally mathematically complex. Numerous problems are wholly or partly unsolved and are efficiently addressed by numerical techniques, usually using computers. A cutting-edge discipline known as computational fluid dynamics is dedicated to this approach. Particle image velocimetry is an experimental technique for analysing and visualising the flow of fluids. It also takes into account the visual nature of the fluid flow.
+
+\section{The Navier Stokes momentum equation}
+The Navier–Stokes momentum equation can be mathematically deduced as a distinct type of the Cauchy momentum equation. The general convective structure is
+$$\frac{Du}{Dt}=\frac{1}{\rho}\mathbf{\nabla}\cdot\sigma + g $$
+by making the Cauchy stress tensor $\sigma$ be the sum of a viscosity term $\tau$ (the deviatoric stress) and a pressure quantity -pI (volumetric stress), we arrive at,
+$$\rho\frac{Du}{Dt}=-\mathbf{\nabla}\cdot p + \mathbf{\nabla}\cdot\tau  + \rho g$$
+Where,
+\begin{itemize}
+    \item $\frac{D}{Dt}$ as $\frac{\delta}{\delta t} + u\cdot\mathbf{\nabla}$ \footnote{In continuum mechanics, the material derivative describes the time rate of change of some physical quantity (like heat or momentum) of a material element that is subjected to a space-and-time-dependent macroscopic velocity field. The material derivative can serve as a link between Eulerian and Lagrangian descriptions of continuum deformation.}
+    \item $\rho =$  density
+    \item $u =$ flow velocity,
+    \item $\mathbf{\nabla} =$ Divergence,
+    \item $p =$ pressure,
+    \item $t =$ time,
+    \item $\tau =$ deviatoric stress tensor,
+    \item g denotes material accelerations acting on the continuum 
+\end{itemize}
+\section{Continuity Equation}
+The additional equation that represents the behaviour of fluid is the continuity equation. The equation to the conservation of mass implies the mass of the fluid is neither created nor destroyed in motion. The concept of conservation is an essential principle used throughout classical physics.
+
+Continuity equation for flow density,
+$$\frac{\sigma \rho}{\sigma t} + \mathbf{\nabla}\cdot(\rho u) =0$$
+Cauchy momentum equation (conservation structure)
+$$ \rho\frac{Du}{Dt}=-\mathbf{\nabla}p +\mathbf{\nabla}\cdot\tau+\rho g$$
+
+\section{Applications of Navier Stokes Equations}
+The Navier–Stokes equations can be very useful in applied physics. Primarily, they help to describe the mechanics of various engineering and scientific phenomena. They could be applied to model ocean currents, weather, air flow around wings, and the flow of water in pipes. These equations, in their simplified and full forms, help out with the modelling of vehicles and aircraft. They are also applied in the analysis of dense liquids, the examination of pollution, the design of power, and other processes related to fluids. Along with Maxwell’s equations, these equations can be applied to study and model magnetohydrodynamics.
+
+
+The Navier–Stokes equations also have great importance in pure mathematics. Despite their extensive range of applications, there is no proof for the consistent existence of smooth solutions in three dimensions; the equations are infinitely differentiable at every point in the domain. It is known as the Navier–Stokes smoothness and existence problem. This has been called one of the most significant unsolved problems in mathematics. A university has offered prize money of 1 million US dollars for whoever finds a solution for it.
+
+\section{Solution of Navier-Stokes Equations
+}
+In the most general form, there are no analytical solutions to the Navier-Stokes equations. In other words, it is only possible to get some form of analytical solutions in particular approximate scenarios\cite{https://doi.org/10.6084/m9.figshare.5668657.v1}. The outcomes may not ever be realised in a real system. More geometrically sophisticated systems will need a numerical technique to find some form of a solution which is achieved with CFD simulations.
+
+\newpage
+\bibliography{ae22b062}
+\bibliographystyle{ieeetr}
+\end{document}
