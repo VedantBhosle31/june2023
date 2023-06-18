@@ -1,0 +1,282 @@
+\documentclass{article}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{amsmath} % Required for inserting images
+\graphicspath{ {./images/} }
+\title{Assignment 4}
+\author{\\ Name : Ish Haresh Gavkhadkar \\ Github ID : ishgavkhadkar}
+\date{}
+\begin{document}
+\maketitle
+\section*{MM22B026}
+\subsection*{PROJECTILE MOTION}
+\textbf{Introdution:-}
+\\
+\\
+\textbf{Projectile motion},refers to the motion of an object launched
+into the air that follows a curved path under the influence of gravity,
+with no other forces acting on it.
+\\
+Q1) Department: an equation, a plot that describes the equation, a brief
+description of the equation and the symbols contained in it, a set of
+references that give more informatiom about the equation and finally, a
+paragraph on how you went about choosing the equation.
+\\
+\\
+\textbf{A. Vertical motion of a projectile under the influence of gravity.}
+\\
+\\
+\textbf{Equation:}\(\ \mathbf{y = u}\mathbf{\sin}\mathbf{\text{θt}}\mathbf{-}\frac{\mathbf{1}}{\mathbf{2}}\mathbf{g}\mathbf{t}^{\mathbf{2}}\mathbf{+ u}\mathbf{\sin}{\mathbf{\theta}\frac{\mathbf{t}_{\mathbf{\text{flight}}}}{\mathbf{2}}}\)
+
+\begin{itemize}
+\item
+  \textbf{y:} Vertical position of the projectile at a given time (m)
+\item
+  \textbf{u}: Initial velocity of the projectile (m/s)
+\item
+  \textbf{θ:} Launch angle of the projectile (deg)
+\item
+  \textbf{t:} Time (s)
+\item
+  \textbf{g:} Acceleration due to gravity (9.8 m/s\^{}2)
+\item
+  \(\mathbf{t}_{\mathbf{\text{flight}}}\)\textbf{:} Time of flight of
+  the projectile (s)
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{y} represents the vertical position of the projectile at a
+  given time. It tells us how high or low the projectile is above the
+  ground (measured in meters).
+\item
+  \textbf{u} is the initial velocity of the projectile. It represents
+  the magnitude of the velocity vector at the instant of launch. The
+  velocity has both horizontal and vertical components.
+\item
+  \textbf{sin θ} is the sine of the launch angle θ. The launch angle
+  determines the direction of the projectile's initial velocity vector.
+  It is measured in degrees.
+\item
+  \textbf{t} is the time elapsed since the projectile was launched. It
+  represents the independent variable of the equation and is measured in
+  seconds.
+\item
+  \textbf{g} is the acceleration due to gravity. On Earth, it is
+  approximately 9.8 (m/s\^{}2). It affects the vertical motion of the
+  projectile, causing it to accelerate downward.
+\end{itemize}
+
+\begin{itemize}
+\item
+  \(\mathbf{t}_{\mathbf{\text{flight}}}\)represents the total time of
+  flight of the projectile. It is the time it takes for the projectile
+  to reach the ground after being launched. It is calculated as 2 × u ×
+  sin \textbf{θ} / g.
+\end{itemize}
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\mathbf{u}\mathbf{\sin}\mathbf{\text{θt}}\)\textbf{:} This term
+  represents the initial upward velocity component of the projectile. As
+  the projectile is launched, this component contributes to the vertical
+  displacement. It gradually decreases over time due to the effect of
+  gravity.
+\item
+  \(\frac{\mathbf{1}}{\mathbf{2}}\mathbf{g}\mathbf{t}^{\mathbf{2}}\mathbf{:}\)This
+  term represents the vertical displacement due to the downward
+  acceleration caused by gravity. As time increases, the effect of
+  gravity becomes more pronounced, causing the projectile to fall
+  faster.
+\item
+  \(\mathbf{u}\mathbf{\sin}\mathbf{\theta}\frac{\mathbf{t}_{\mathbf{\text{flight}}}}{\mathbf{2}}\)\textbf{:}
+  This term adjusts the equation to ensure the final position matches
+  the initial position. It compensates for the fact that the projectile
+  starts and ends at the same vertical position.
+\end{enumerate}
+\\
+\\
+\textbf{B. Horizonal motion of a projectile under the influence of gravity}
+\\
+\\
+\textbf{Equation:-}
+\(\mathbf{x = u}\mathbf{\cos}\mathbf{\text{θt}}\mathbf{+ u}\mathbf{\sin}\mathbf{\theta}\frac{\mathbf{t}_{\mathbf{\text{flight}}}}{\mathbf{2}}\)
+
+\begin{itemize}
+\item
+  \textbf{x:} Horizontal position of the projectile at a given time (m)
+\item
+  \textbf{u}: Initial velocity of the projectile (m/s)
+\item
+  \textbf{θ}: Launch angle of the projectile (deg)
+\item
+  \textbf{t:} Time (s)
+\item
+  \textbf{g:} Acceleration due to gravity (9.8 m/s\^{}2)
+\item
+  \(\mathbf{t}_{\mathbf{\text{flight}}}\)\textbf{:} Time of flight of
+  the projectile (s), font=("Arial", 25)
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{x} represents the horizontal position of the projectile at a
+  given time. It tells us how far the projectile has traveled
+  horizontally from the starting point (measured in meters).
+\item
+  \textbf{u} is the initial velocity of the projectile. It represents
+  the magnitude of the velocity vector at the instant of launch. The
+  velocity has both horizontal and vertical components.
+\item
+  \textbf{cos θ:} is the cosine of the launch angle θ .The launch angle
+  determines the direction of the projectile's initial velocity vector.
+  It is measured in degrees.
+\item
+  \textbf{t} is the time elapsed since the projectile was launched. It
+  represents the independent variable of the equation and is measured in
+  seconds.
+\item
+  \(\mathbf{t}_{\mathbf{\text{flight}}}\)\textbf{:}represents the total
+  time of flight of the projectile. It is the time it takes for the
+  projectile to reach the ground after being launched. It is calculated
+  as 2 × u × sin(θ) / g, where g is the acceleration due to gravity.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\mathbf{u}\mathbf{\cos}\mathbf{\text{θt}}\) This term represents the
+  horizontal displacement of the projectile due to its initial velocity
+  component in the x-direction. It describes the projectile's horizontal
+  motion without considering the effect of gravity.
+\item
+  \(\mathbf{u}\mathbf{\sin}\mathbf{\theta}\frac{\mathbf{t}_{\mathbf{\text{flight}}}}{\mathbf{2}}\)\textbf{:}
+  This term adjusts the equation to ensure the final position matches
+  the initial position. It compensates for the fact that the projectile
+  starts and ends at the same horizontal position.
+\end{enumerate}
+\\
+\\
+\textbf{C. Time of Flight :-}
+\\
+\\
+\textbf{Equation:-}
+\(\mathbf{t}_{\mathbf{\text{flight}}}\mathbf{=}\frac{\mathbf{2}\mathbf{u}\mathbf{\sin}\mathbf{\theta}}{\mathbf{g}}\)
+
+\begin{itemize}
+\item
+  \(\mathbf{t}_{\mathbf{\text{flight}}}\)\textbf{:} Time of flight of
+  the projectile (s)
+\item
+  \textbf{u}: Initial velocity of the projectile (m/s)
+\item
+  \textbf{θ:} Launch angle of the projectile (deg)
+\item
+  \textbf{g:} Acceleration due to gravity (9.8 m/s\^{}2)
+\item
+  \(\mathbf{t}_{\mathbf{\text{flight}}}\mathbf{\ }\)represents the time
+  of flight of the projectile, which is the total time it spends in the
+  air from the moment of launch until it lands. It is measured in
+  seconds.
+\item
+  \textbf{u} is the initial velocity of the projectile. It represents
+  the magnitude of the velocity vector at the instant of launch. The
+  velocity has both horizontal and vertical components.
+\item
+  \textbf{sinθ} is the sine of the launch angle . The launch angle
+  determines the direction of the projectile's initial velocity vector.
+  It is measured in degrees.
+\item
+  \textbf{g} is the acceleration due to gravity, which is approximately
+  9.8 m/s\^{}2. It represents the downward acceleration experienced by
+  the projectile.
+\end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  The equation itself is derived from the kinematic equations of motion
+  for projectile motion
+\item
+  By plugging in the values of the initial velocity and launch angle,
+  the equation can be used to calculate the time of flight for a given
+  projectile.
+\end{enumerate}
+\\
+\\
+\textbf{D. Horizontal range of a projectile launched at a given initial
+velocity and angle}
+\\
+\\
+\textbf{Equation:}
+\(\text{}\mathbf{R =}\frac{\mathbf{u}_{\mathbf{0}}^{\mathbf{2}}\mathbf{\sin}{\mathbf{2}\mathbf{\theta}}}{\mathbf{g}}\)
+
+\begin{itemize}
+\item
+  \textbf{R}: Horizontal range of a projectile launched (m)
+\item
+  \textbf{u}: Initial velocity of the projectile (m/s)
+\item
+  \textbf{θ:} Launch angle of the projectile (deg)
+\item
+  \textbf{g:} Acceleration due to gravity (9.8 m/s\^{}2)
+\end{itemize}
+
+\begin{itemize}
+\item
+  \textbf{R} represents the horizontal range of the projectile, which is
+  the horizontal distance traveled by the projectile before it lands. It
+  is measured in meters.
+\item
+  \textbf{u} is the initial velocity of the projectile. It represents
+  the magnitude of the velocity vector at the instant of launch. The
+  velocity has both horizontal and vertical components.
+\item
+  \textbf{θ} is the launch angle of the projectile. It determines the
+  direction of the projectile's initial velocity vector. It is measured
+  in degrees.
+\item
+  \textbf{sin2θ} is the sine of twice the launch angle. The factor of 2
+  accounts for the symmetrical nature of the projectile's trajectory.
+\item
+  \textbf{g} is the acceleration due to gravity, which is approximately
+  9.8 m/s\^{}2. It represents the downward acceleration experienced by
+  the projectile
+\end{itemize}
+
+\textbf{Q2) Paragraph on how you went about choosing the equation.}
+\\
+\\
+Firstly, I choosed this equation, because we are dealing with projectile
+motion since class 11 and its interesting and easy to understand.
+Projectile motion refers to the path followed by an object in motion
+under the influence of gravity, where the only force acting on it is the
+force of gravity. To accurately describe this motion, I chose the
+equation that consists elements: initial velocity, launch angle, time of
+flight, horizontal and vertical displacements, and acceleration due to
+gravity. Moreover, working with projectile motion equations provided me
+with a practical toolkit for solving real-world problems. Whether it was
+analyzing the trajectory of a launched rocket, understanding the motion
+of a baseball, or predicting the range of a cannonball, I felt empowered
+to apply my knowledge and make meaningful calculations. It make us to
+think pratically. In conclusion, I have chosen parametric equations for
+projectile motion because they provide a comprehensive framework for
+understanding and analyzing the behavior of objects moving under the
+influence of gravity.
+\\
+\\
+\textbf{Conclusion:-}
+\\
+\\
+In conclusion, projectile motion is a fascinating phenomenon that occurs
+when an object is launched into the air and moves under the influence of
+gravity alone. It involves the object following a parabolic trajectory,
+with its motion being divided into separate horizontal and vertical
+components. By understanding and applying the principles of projectile
+motion, we can analyze and predict the behavior of objects those launched at different angles and velocities
+
+\bibliography{refs}
+\bibliographystyle{alpha}
+\footnote{Wikipedia,"Article:Biot–Projectile Motion",(Accessed: June , 2023)}
+\end{document}
