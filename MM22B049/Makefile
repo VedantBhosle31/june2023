@@ -1,7 +1,7 @@
 # Makefile to generate PDF from LaTeX file
 
 # Specify the name of the LaTeX file without the file extension
-FILENAME = your_filename
+FILENAME = mm22b049.tex
 
 # Define the commands for PDF generation
 PDF_COMMAND = pdflatex
