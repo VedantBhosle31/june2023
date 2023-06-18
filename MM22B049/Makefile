@@ -1,14 +1,8 @@
 
-FILENAME = mm22b049
+target:mm22b049.tex
+	pdflatex mm22b049.tex
+	bibtex ae22b008
+	pdflatex ae22b008.tex
+	pdflatex ae22b008.tex
 
-PDF_COMMAND = pdflatex
-PDF_FLAGS = -interaction=nonstopmode -halt-on-error
-
-
-pdf:
-    $(PDF_COMMAND) $(PDF_FLAGS) $(FILENAME).tex
-    $(PDF_COMMAND) $(PDF_FLAGS) $(FILENAME).tex
-
-
-clean:
-    rm -f $(FILENAME).log $(FILENAME).aux $(FILENAME).out $(FILENAME).toc
+	rm -f mm22b049.aux mm22b049.bbl mm22b049.log mm22b049.blg
