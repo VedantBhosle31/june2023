@@ -15,5 +15,5 @@ all: mm22b026.tex refs.bib
 #
 # make clean -> to remove temporary files from the folder
 clean:
-	rm -f sample.aux sample.bbl sample.log sample.dvi sample.blg
+	rm -rf sample.aux sample.bbl sample.log sample.dvi sample.blg
 # end of Makefile
