@@ -1,4 +1,4 @@
-all:ae22b110.tex 
+target:ae22b110.tex 
 	pdflatex ae22b110.tex
 	bibtex ae22b110
 	pdflatex ae22b110.tex
