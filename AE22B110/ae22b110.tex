@@ -15,7 +15,7 @@
 \subsection*{History}
 
 The Laplace transform is named after mathematician and astronomer Pierre-Simon, marquis de Laplace.
-Laplace wrote extensively about the use of generating functions (1814), and the integral form of the Laplace transform evolved naturally as a result. $\footnote{URL : https://en.wikipedia.org/wiki/Laplace\_transform}$
+Laplace wrote extensively about the use of generating functions (1814), and the integral form of the Laplace transform evolved naturally as a result. ~\cite{enwiki:1158213292}
 
 \begin{figure}[h]
     \centering
@@ -30,7 +30,7 @@ Laplace Transform is used in the processing of data signals during their transmi
 
 \subsection*{Formula}
 
-Laplace Transform:\footnote{This formula is for the Bilateral version of Laplace Transform}
+Laplace Transform:~\cite{oppenheim1997signals}\footnote{This formula is for the Bilateral version of Laplace Transform} 
 
 \medskip
 
@@ -51,7 +51,7 @@ Inverse Laplace Transform:
 where Re\{s\} = $\sigma$ is in the ROC of X(s).
 This equation is solved using \textbf{Contour Integration} because s is complex. ~\cite{adams2013lecture}
 
-\subsection*{Radius of Convergence (ROC)}~\cite{oppenheim1997signals}
+\subsection*{Radius of Convergence (ROC)}\footnote{URL : https://www.tutorialspoint.com/signals\_and\_systems/region\_of\_convergence.htm}
 
 The range variation of $\sigma$ for which the Laplace transform converges is called region of convergence.
 
@@ -71,6 +71,10 @@ The range variation of $\sigma$ for which the Laplace transform converges is cal
     \item If x(t) is a left sided sequence then ROC : Re\{s\} $<$ $\sigma_o$.
     \item If x(t) is a two sided sequence then ROC is the combination of two regions.
 \end{itemize}
+
+\subsection*{Reason for choosing this equation}
+
+Laplace Transform is major tool in signals and systems. It is used vastly in the Aerospace field in \textbf{control systems} and \textbf{feedback mechanisms}. It makes the analysis of the system much more easier. 
 
 \bibliographystyle{plain}
 \bibliography{refs.bib}
