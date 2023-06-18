@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+
+\title{Ohm's Law: A Report}
+\author{Name: Vaibhav Verma \\ Roll no. : MM22B064 \\ GithubId : Vaibhav0106}
+
+\date{\today}
+
+\begin{document}
+
+
+\maketitle
+
+\section*{MM22B064}
+
+According to page no.285 of \cite{griffiths}  , for most of the substances the current density $J$ is proportional to the force per unit charge which is $f$ .
+
+\section*{Introduction}
+Ohm’s law states that the voltage or potential difference between two points is directly proportional to the current or electricity passing through the resistance, and directly proportional to the resistance of the circuit.
+Mathematically V=IR.
+Ohm's Law is a fundamental principle in electrical circuits, but it is also applicable in other areas such as electromagnetics and material science. In addition to the classic form of Ohm's Law, there is a vector form that is used to describe the relationship between current density, electric field, and conductivity.
+
+The vector form of Ohm's Law is expressed as:
+
+J=$\sigma$ E
+where:
+\begin{itemize}
+\item $\mathbf{J}$ is the current density vector at a given location in a resistive material,
+\item $\mathbf{E}$ is the electric field vector at that location, and
+\item $\sigma$ (sigma) is a material-dependent parameter called the conductivity.
+\end{itemize}
+Ohm's Law is based on the concept that a conductor has a uniform resistance, meaning that the ratio of voltage to current remains constant for a given conductor at a given temperature.\footnote{reference: Introduction to Electrodynamics third edition by David J. Griffiths. Chapter 7 (Electrodynamics), Unit 7.1.1(Ohm's law)} 
+
+\section{Experimental Procedure}
+To verify Ohm's Law, an experiment was conducted using a DC circuit. The following equipment was used:
+\begin{itemize}
+  \item Power supply
+  \item Resistor (of known resistance)
+  \item Ammeter
+  \item Voltmeter
+  \item Connecting wires
+\end{itemize}
+
+The voltage across the resistor was varied using the power supply, and the corresponding current was measured using the ammeter. The experiment was repeated for different voltage values, and the results were recorded.
+
+\section{Results and Analysis}
+The measured values of voltage and current were used to calculate the resistance for each data point. The data obtained is presented in Table \ref{tab:data}.
+
+\begin{table}[h]
+  \centering
+  \caption{Measured data for Ohm's Law experiment}
+  \label{tab:data}
+  \begin{tabular}{|c|c|c|}
+    \hline
+    Voltage (V) & Current (A) & Resistance ($\Omega$) \\
+    \hline
+    2.0 & 0.5 & 4.0 \\
+    4.0 & 1.0 & 4.0 \\
+    6.0 & 1.5 & 4.0 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Based on the experimental data, the resistance values remain constant for different voltage-current pairs. This confirms Ohm's Law, as the calculated resistance values are consistent.
+
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+
+\end{document}
