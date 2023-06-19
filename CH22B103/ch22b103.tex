@@ -1,0 +1,278 @@
+\documentclass[a4paper]{article}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[paperheight=6in,
+   paperwidth=5in,
+   top=10mm,
+   bottom=20mm,
+   left=10mm,
+   right=10mm]{geometry}
+
+\author{Sri Charan T ch22b103}
+\title{Euler-Lagrange Equation}
+\date{June 2023}
+\begin{document}
+\begin{titlepage}
+    \center\textbf{\Huge Sri Charan T}
+    \\[0.5cm]
+    \center\textbf{\huge CH22B103}
+    \\[0.5cm]
+    \center\textit{\href{https://github.com/SriCharan04/june2023}{\huge SriCharan04} }
+    \\[0.75cm]
+    \center\textit{\huge{Euler - (Lagrange) Equation}}
+    \\[0.75cm]
+    \center \textbf{\Huge{Proudly Made in \LaTeX}\footnote{Thanks to Book \cite{lam_latex}, that this document looks aesthetic, and informative!!}}
+   
+\end{titlepage}
+\def\Lagrangian{n\sqrt{\left({dr\over d\theta}\right)^{2}+ {r}^{2}}}
+\def\roots{\sqrt{{\dot r}^{2}+{r}^{2}}}
+
+\section{ch22b103}
+Name:Sri Charan T
+Github ID: SriCharan04
+\section {Introduction}
+The Euler equation, an important equation in the branch of mathematics, called the calculus of variation, is a second order differential equation, using which we can find the extremum curve, among all the smooth curves, joining two given points, in space.
+
+Its applications providing a convinient way to find all the stationary curves for a given family of curves, are not only limited to mathematics, but also to physics, in terms of finding trajectory of light and finding the equations of motion of the particle, given the scalar potential field.\\
+
+The reason why I took this equation, is that, when my Physics professor taught this for the first time, this equation cahgned the way, I thought of mechanics. Previously, i thought of mechanics as actions of forces and thier reactions. Sooner, i realised, that the difference in energy levels between two dissimilar states, can bring a change, just like two water wells, levelling up, when connected together.
+
+
+The formal definition of Euler - Lagrange Equation is as follows:
+For a class of functions $\textbf{M}$, and function y = f(x), such that $y \in \textbf{M}$, we can define the Lagrangian $\mathcal{L}=\mathcal{L}(x,y,\acute{y})$ and a functional $\textit{J} = \int \mathcal{L} dx).$ Then we can say that the functional \textit{J}, has a stationary point when the Lagrangian L satisfies the Euler-Lagrange equation: 
+
+\begin{center}
+\label{sec1}
+\begin{equation}
+\fbox{\resizebox{0.5\textwidth}{!}{${d\over dx}({\partial{L}\over\partial\dot{y}}) = {\partial{L}\over\partial{y}}$}} \label{eq:eu-lag}
+\end{equation}
+\end{center}
+\section{Application in Mathematics:}
+The formula can be used where ever there is a need to minimise or maximise some function of a variable and its derivative. If a function y = y(x) gives the integral $\mathcal{J}$, the minimum value, then any neighbouring function, no matter how close, it is to y(x), must make J increase.\cite{var_cal}
+
+Euler equation, is used to find geodesic lines (shortest path between two points, given some constraints, in degrees of freedom of the particle), and minimum surface area of revolving solid.
+
+\subsection{Geodesic Lines}
+In general, geodesic is a generalisation of the concept of straight lines in Riemann spaces (A alternate theory which corrected, and even disproved some postulates of Euclidean spaces). For Example, take two points. Generally, a straight line would be the shortest curve which connects two points. 
+
+More generally, we can say that a curve is the shortest path, when the tangent vector remains parallel to the curve, when we are travelling along the curve (parallel transported). In case of a particle constrained to move along a sphere, the particle, has to take a circular path, leading to the shortest distance, between those two points. 
+
+\footnote{image referred from a Quora Article by \cite{geode}}
+This can be proved by the Euler Equation. Here, we consider, the r - $\theta$ plane to pass through the two points, and the sphere to intersect the two points as diametrically opposite.
+
+Here, the variation of the path lengths, should be zero. Therefore,
+\begin{center}
+    $\delta\int_{\textit{l}}{ds} = 0$
+\end{center}
+
+Now, we have, in spherical polar coordinates,
+\begin{center}
+$\vec ds = dr \hat{r} + rd\theta \hat{\theta} +rsin\theta d\phi \hat{\phi}$\\
+So,
+ ${ds}^2 = \vec ds \cdot \vec ds = {dr}^2 + {r}^2{d\theta}^2 + {r}^2{sin}^2\theta {d\phi}^2$\\
+\end{center}
+But, for a sphere, $r = R (constant) \Longrightarrow dr = 0$
+
+Therefore, we get,
+\begin{equation}
+    {ds}^2 = {R}^2{d\theta}^2 + {R}^2{sin}^2\theta {d\phi}^2 \label{eq:geo}
+\end{equation}
+
+Now, using this, we can find $\int_{l} ds$
+
+\begin{center}
+    $\therefore \int_{l} ds = R \sqrt{{d\theta}^2+sin^2\theta {d\phi}^2}$
+\end{center}
+
+Now, using the affine parameter, $\lambda$, such that the parametric equations, satisfy the geodesic equation (some higher physics out here).
+
+\begin{equation}
+    \int_{l} ds = R \sqrt{\left(d\theta\over d\lambda\right)^2+sin^2\theta \left(d\phi \over d\lambda\right)^2}d\lambda = \int_{l} \mathcal{L}d\lambda
+\end{equation}
+\begin{equation}
+    \therefore \mathcal{L} = R \sqrt{\dot \theta^2+sin^2\theta (\dot \phi)^2}
+\end{equation}
+
+Now, applying Euler equation for coordinate $\theta$ finally, we get
+\begin{equation}
+    {{Rsin\theta cos\theta (2{\dot\theta}^2{\dot\phi}^2+{\dot\phi}^4sin^2\theta)}\over\left(\sqrt{{\dot\theta}^2+{\dot\phi}^2sin^2{\theta}}\right)^3} = 0
+\end{equation}
+
+which gives $\theta$ = 0 or $\pi$ (neglected as they are point solutions), or $\theta$ = $\pi$/2 (required solution).
+
+\subsection{Minimum Surface Area}
+Consider a curve y=y(x), connecting two points ($x_1,y_1$) \& ($x_2,y_2$). The curve is then revolved about the y-axis. The obtained surface is to have a minimum surface area. We need to obtain this equation of this curve.\footnote{Example referred from \cite{morin} - Exercise 6.23 \& \cite{thornton} - Example 6.3}
+
+We have dA = 2$\pi$x ds (Surface area of revolved solid) \cite{arc}. So, the functional is 
+\begin{equation}
+    \delta\int_{\textit{l}}2\pi x ds = 0 \label{eq:surf}\\
+\end{equation}            
+
+\begin{equation}
+    \delta\int_{x_i}^{x_f}2\pi x \sqrt{1 + \left(dy\over dx\right)^{2}}\ dx = 0 = \delta\int_{x_i}^{x_f}{\mathcal{L}dx}\label{eq:surf_s_1}
+\end{equation}
+
+\begin{equation}
+    \therefore \mathcal{L} = 2\pi x \sqrt{1 + \left(dy\over dx\right)^{2}}
+\end{equation}
+
+Now, applying Euler Equation for the coordinate y, we get, 
+\begin{equation}
+    {d\over dx}\left(\partial \mathcal{L}\over \partial \dot y\right) = {d\over dx}\left(2\pi x \dot y \over \sqrt{1 + {\dot y}^2}\right) = {\partial \mathcal{L}\over \partial y} = 0
+\end{equation}
+
+As solving the Differential Equation as it is, would be computationally painful,
+\begin{equation}
+    \therefore {2\pi x \dot y \over \sqrt{1 + {\dot y}^2}} = constant (a)
+\end{equation}
+Now that we took $\acute a = {a \over 2\pi}$,
+
+\begin{equation}
+    \dot y = {\acute a \over \sqrt {x^2-{\acute a}^2}}
+\end{equation}
+
+This upon integration within limits, gives us,
+\begin{equation}
+    [y]_{y_1}^{y_2} = \acute a \left[sinh\left(x\over \acute a\right)\right]_{x_1}^{x_2}
+\end{equation}
+
+Now, this equation is what is called catenary equation. This shape resembles a freely hanging rope, for two horizontally different points. This shape gives the minimum surface of revolution.
+
+\section{Application in Physics:}
+\subsection{Fermat's Principle:}
+One well known principle of the Euler-Lagrange Equation, is the Fermat's Principle. Light travels by the path, which takes the least amount of time. In theory, the refractive index can be varied over a space in the medium, such that light can go in circular paths too (it retraces itself). This method is called gradient-refractive index (GRI) method, and is a thriving topic now-a-days.
+
+
+The approach to solve the problem of finding the trajectory of light, is inspired from \cite{gri}, \cite{arc} \& \cite{thornton}.
+
+The shortest path taken, for light to go from one point to another point , depends on the refractive index of the suurounding medium, and hence, is a fucntional.
+
+The variation of optical path functional should be zero, according to the Fermat's principle.
+
+\begin{equation}
+    \delta\int_{\textit{l}}{nds} = 0 \label{eq:base}
+\end{equation}
+
+where \textit{d}s is the differential arc length of the path travelled, by light, and \textit{l}, is the path travelled by light, and $\delta$, is a shorthand notation for the differential quantities in the differential equation.
+Now, the Equation: \ref{eq:base} is expanded in Polar coordinates, along the path \textit{l}, as, \\
+\begin{equation}
+ \begin{centering}
+     r = r_{0}, \Longrightarrow \dot r = 0 \Longrightarrow \ddot r = 0\label{path},\theta \in (0,2\pi) \label{path}
+ \end{centering}
+ \end{equation}
+
+Therefore, we have
+\begin{equation}
+    \delta\int_{\theta_i}^{\theta_f}{n(r,\theta)\sqrt{\left( {dr\over d\theta}\right)^{2}+ {r}^{2}}\ d\theta} = 0 = \delta\int_{\theta_i}^{\theta_f}{\mathcal{L}d\theta} \label{eq:base_s_1}
+\end{equation}
+
+Which simplifies to 
+
+\begin{equation}
+    \mathcal{L} = \Lagrangian
+\end{equation}
+
+From now on, we write $n(r,\theta)$, as $n$ alone, for simplicity and brevity. Now, substituting this Lagrangian into the Equation \ref{eq:eu-lag}, we get
+
+\begin{equation}
+    {d\over d\theta}\left({\partial\over\partial\dot{r}}\left({{\Lagrangian}}\right)\right) = {{\partial\over\partial{r}}\left(\Lagrangian\right)}
+\end{equation}
+
+    Therefore, we get,
+\begin{equation} 
+   n{\ddot r\over\roots} + {\dot r{dn\over d\theta}\over{\roots}}-{\dot r \ddot r + r\dot r\over \left({\roots}\right)^3}= {nr \over \roots}+ {\partial n \over \partial r} \roots
+\end{equation}
+
+Using $\ref{path}^{rd}$ equation, we get 
+\begin{equation}
+    0 = n + r {\partial n \over \partial r}
+\end{equation}
+
+This is a linear partial differential equation, which can be easily integrated to get,
+
+\begin{equation}
+    ln(r) = -ln(n) + c
+\end{equation}
+
+Where c is the constant of integration. If we fix the initial radius, \\$r_0$ = 1, and n = 1, we get c = 0. Therefore, for radius, $r \geq 1$,($r < 1$, gives erroneous results, as $n \rightarrow \infty$, as r $\rightarrow 0$).
+
+\begin{equation}
+    r = {1\over n} \label{result}
+\end{equation}
+
+Therefore, if the refractive index varies as the reciprocal of the distance from a reference point (usually taken as the origin), then light entering the medium retraces itself (follows a circular path).
+
+\subsection{Lagrangian and Hamiltonian Dynamics}
+When applied to physics, especially in dynamics, Euler's equation is also called Euler-Lagrange Equation. This provides a much more convenient way to obtain equations of motion than Newton's $2^{nd}$ law for a complex system, where the latter can become simply infeasible, as this method deals only with scalar energies (1 eqn.), whereas, the Newtonian method requires to solve forces equations, which can be tiring, as we need to solve for every component (mainly three eqns.). This method provides additional information regarding the symmetries present in the system (w.r.t particular axes) and its corresponding conserved quantity.
+
+For a particle under a conservative potential, in Cartesian co-ordinates,
+
+\begin{equation}
+    T = {1\over 2}m({\dot x}^2+{\dot y}^2+{\dot z}^2)\ ,\ V = V(x,y,z)
+\end{equation}
+
+Here, T is kinetic energy, and V is potential energy. Therefore,\\
+\begin{equation}
+\fbox{\resizebox{0.85\textwidth}{!}{$L = {1 \over 2}m(\dot{x}^{2}+\dot{y}^{2}+\dot{z}^{2}) - V(x,y,z) $}} \label{cart}
+\end{equation}
+\newline
+
+A more general version of Lagrangian Dynamics is Hamiltonian Dynamics, which tells us that 
+the action functional is the difference between kinetic and potential energies.
+Even though, theoretically, the integral of this difference gives only an extremum curve (not necessarily a minimum curve), practically speaking, the solution we get is almost always a minimum condition.
+
+This method is proper when we can't find the forces in the system, but we know its energies (especially in quantum-mechanical models).
+
+For example, we consider a simple pendulum with a complex twist. The support of a pendulum is rotating about a circle of radius R. Our objective is to obtain the equation of motion. With Newton's $2^{nd}$ law, this becomes clumpy very quickly due to the rotating pivot.
+
+Let a be the radius of the spinning support, and b be the pendulum's length.
+
+We have the absolute motion of bob due to the sum of the relative motion of bob w.r.t the support, and the circular motion of the support, w.r.t the center. \footnote{This example is referred to, from \cite{thornton}, Example 7.5}
+Thus, 
+\begin{equation}
+    x = acos(\omega t) + bsin(\theta) \ \& \ y = asin(\omega t) - bcos(\theta) \label{eq_1}
+\end{equation}
+
+Differentiating on both sides,
+\begin{equation}
+    \dot x = -a\omega sin(\omega t) + b\dot \theta cos(\theta)\ \& \  \dot y = a\omega cos(\omega t) + b\dot \theta sin(\theta) \label{eq_s_2}
+\end{equation}
+
+Once again, differentiating on both sides, we get,
+\begin{equation}
+    \ddot x = -a{\omega}^{2}cos(\omega t) - b{\dot \theta}^{2}sin(\theta)\ \& \ y = -a{\omega}^{2}sin(\omega t) + b{\dot \theta}^{2} cos(\theta) \label{eq_s_3}
+\end{equation}
+
+From Equation \ref{cart}, we get,
+\begin{equation}
+    \scriptsize{\mathcal{L} = {1\over2}m\left((-a\omega sin\omega t + b\dot \theta cos\theta)^2 + (a\omega cos\omega t + b\dot \theta sin\theta)^2\right) - mg(asin\omega t - bcos\theta)}
+\end{equation}
+
+So,
+\begin{equation}
+   \mathcal{L} =  {1\over2}ma^2\omega^2 +{1\over2}mb^2{\dot \theta}^2 - ma\omega b\dot\theta sin(\theta - \omega t) -mga sin\omega t\ + mgbcos\theta
+\end{equation}
+
+
+ Now, using Euler-Lagrange Equation, \ref{eq:eu-lag}, for the co-ordinate $\theta$ we get, 
+\begin{equation}
+{\partial{\mathcal{L}}\over\partial \theta} = -ma\omega b {\dot \theta} cos(\theta - m\omega t) - mgb sin\theta \label{res_1}
+\end{equation}
+
+\begin{equation}
+\scriptsize{\partial{\mathcal{L}}\over\partial \dot \theta} = mb^2\dot \theta -ma\omega b sin (\theta -\omega t ) \Longrightarrow {d\over dt}\left(\partial{\mathcal{L}}\over\partial \dot \theta\right) = mb^2\ddot \theta - ma\omega b\dot \theta cos (\theta - \omega t) - ma\omega^2 b cos(\theta -\omega t)  \label{res_2}
+\end{equation}
+
+Comparing \ref{res_1} \& \ref{res_2}
+\begin{equation}
+    \ddot \theta = {-gsin\theta\over b} +{a\omega^2\over b}cos(\theta - \omega t)
+\end{equation}
+
+With minimal effort, we obtained the equation for a complex system.
+
+\bibliography{refs}
+\bibliographystyle{plain}
+
+\end{document}
+
