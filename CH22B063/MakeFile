@@ -1,0 +1,8 @@
+once: ch22b063.tex 
+	latex ch22b063.tex
+all: ch22b063.tex
+	latex ch22b063.tex
+	latex ch22b063.tex
+	dvipdf ch22b063.dvi
+clean:
+	rm -f ch22b063.aux ch22b063.log ch22b063.dvi ch22b063.blg
