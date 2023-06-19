@@ -1,7 +1,7 @@
-target:main.tex
-	pdflatex main.tex
-	bibtex main
-	pdflatex main.tex
-	pdflatex main.tex
+target:ae22b001.tex
+	pdflatex ae22b001.tex
+	bibtex ae22b001
+	pdflatex ae22b001.tex
+	pdflatex ae22b001.tex
 	
-	rm -f main.aux main.bbl main.log main.blg
+	rm -f ae22b001.aux ae22b001.bbl ae22b001.log ae22b001.blg
