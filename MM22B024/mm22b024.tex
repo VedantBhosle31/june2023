@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{amsmath}
+
+
+
+\title{\textbf{Taylor's Series}}
+\author{Chirag V Gupta}
+\date{MM22B024}
+
+\begin{document}
+\maketitle
+\section{MM22B024}
+\subsection{Details}
+\textbf{Name}: \textit{Chirag Vikram Gupta} \\
+\textbf{Git-Hub User ID}: \textit{CVG-2904}
+\subsection{Formulae}
+The Taylor series expansion of a function $f(x)$ around $x=a$ is given by:
+
+\[
+f(x) = f(a) + \frac{{f'(a)}}{{1!}}(x-a) + \frac{{f''(a)}}{{2!}}(x-a)^2 + \frac{{f'''(a)}}{{3!}}(x-a)^3 + \ldots
+\] \footnote{MA1102 Classnotes
+Series and Matrices, Chapter 2 Section 2.3}
+
+Alternatively, the compact form using sigma notation is:
+
+\[
+f(x) = \sum_{n=0}^{\infty} \frac{{f^{(n)}(a)}}{{n!}}(x-a)^n
+\]\footnote{MA1102 Classnotes
+Series and Matrices, Chapter 2 Section 2.3}
+
+\subsection{Taylor Polynomials}
+The linearization of a differentiable function ƒ at a point a is the polynomial of degree one
+given by
+
+\[P1(x) = f(a) + f'(a)(x-a).\]
+\footnote{Thomas Calculus}
+If f has derivatives of higher order at a, then it has higher-order polynomial approximations as well, one for each available derivative. These polynomials are called the Taylor polynomials of f. \\
+We speak of a Taylor polynomial of order n rather than degree n because ƒ(n)
+(a) may
+be zero. The first two Taylor polynomials of ƒ(x) = cos x at x = 0, for example, are
+P0(x) = 1 and P1(x) = 1. The first-order Taylor polynomial has degree zero, not one.
+Just as the linearization of ƒ at x = a provides the best linear approximation of ƒ in
+the neighborhood of a, the higher-order Taylor polynomials provide the “best” polynomial
+approximations of their respective degrees.
+
+
+
+
+
+
+\end{document}
