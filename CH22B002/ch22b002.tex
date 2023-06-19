@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{physics}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage[symbol]{footmisc}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{soul}
+\pagestyle{fancy}
+\pagenumbering{arabic}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\lhead{ID2090}
+\rhead{Assignment-4}
+
+
+\begin{document}
+
+
+\begin{titlepage}
+    \centering
+    \vfil
+    {\bfseries\Large
+        \vspace*{\stretch{1}}
+        \huge{Assignment-4}\\
+        \vskip1cm
+        ID2090\\
+        \vskip2cm
+        Ganesh B\\
+        \vskip0.3cm
+        CH22B002\\
+        \vskip0.3cm
+        GitHub: {\color{blue}{{\href{https://github.com/gnshb}{{gnshb}}}}}\\
+        \vspace*{\stretch{1}}   
+    }    
+    \vfil
+\end{titlepage}
+\newpage
+
+\section{Vandermonde Determinant}
+
+\subsection{The Vandermonde Matrix}
+
+In linear algebra, a Vandermonde matrix, named after Alexandre-Théophile Vandermonde, is a ${(m+1)\times (n+1)}$ matrix with the terms of a geometric progression in each row: 
+
+$$
+V=V\left(x_0, x_1, \cdots, x_m\right)=\left[\begin{array}{ccccc}
+1 & x_0 & x_0^2 & \ldots & x_0^n \\
+1 & x_1 & x_1^2 & \ldots & x_1^n \\
+1 & x_2 & x_2^2 & \ldots & x_2^n \\
+\vdots & \vdots & \vdots & \ddots & \vdots \\
+1 & x_m & x_m^2 & \ldots & x_m^n
+\end{array}\right]_{(m+1)\times(n+1)}
+$$
+
+The Vandermonde matrix and its determinant\footnote[4]{i.e. when $m=n$ or $V$ is square} have several important applications. Let us first look at its determinant.
+
+\subsection{Determinant}
+
+The determinant is surprisingly very simple to calculate. It can be put very compactly as a product:
+
+$$\boxed{\left| V \right|=\prod_{0\le i<j\le n}\left(x_j-x_i\right)}$$
+
+There are many ways to prove this. A couple of them are listed here\cite{citation1}.
+\subsection{Applications}
+
+There are various instances where this matrix pops up. In polynomial interpolation, since inverting the Vandermonde matrix (given $n=m$ ) allows expressing the coefficients of the polynomial in terms of the $x_i$ and the values $p\left(x_i\right)$ of the polynomial at those points. In other words, given $n+1$ distinct nodes with coordinates $\left(x_i, p\left(x_i\right)\right)$, there exists a unique polynomial $p(x)=a_0+a_1 x+a_2 x^2+\cdots+a_n x^n$ of degree $n$ which interpolates them and its coefficients can be computed by solving $a=V^{-1} f$, where $a$ is the column coefficient matrix. The discrete Fourier transform matrix is a very special example of a Vandermonde matrix\cite{citation2}.
+\vskip0.5cm
+The rows also form orthogonal bases, which have many nice applications in number theory and linear algebra.
+
+
+
+\newpage
+\bibliography{mybib}{}
+\bibliographystyle{ieeetr}
+
+\end{document}
