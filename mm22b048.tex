@@ -1,0 +1,41 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+
+\section*{ID2090}
+
+Assignment 4
+
+\textbf{Name }: Prinal Kumat 
+
+\textbf{RollNo. } : MM22B048
+
+\textbf{Github user Id } :https://github.com/prinalkumat
+
+\subsection*{Activation functions}
+An activation function decides whether a neuron should be activated or not.
+The purpose of the function is to introduce non-linearity into the output of the neuron.
+
+\subsection{Sigmoid}
+Related to 
+\emph{Logistic Regression}  
+For single label or multi-label binary classification	
+\begin{equation}
+\sigma(z) = \frac{1} {1 + e^{-z}}
+\end{equation}
+
+\subsection{Tanh}
+\begin{equation}
+tanh(x) = \frac{e^x - e^{-x}}{e^{x} + e^{-x}} = \frac{1 - e^{-2x}}{1 + e^{-2x}}
+\end{equation} 
+
+In neural networks the process of 
+\emph{back propogation}   
+is possible because of 
+activation functions, that is gradients are supplied along 
+with the error to update the 
+weights and biases.
+
+\footnote{https://www.geeksforgeeks.org/activation-functions-neural-networks/}
+ 
+\end{document}
